@@ -14,6 +14,7 @@
 		4E4DD0142611FD8E0032AF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DD0132611FD8E0032AF91 /* Assets.xcassets */; };
 		4E4DD0172611FD8E0032AF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E4DD0152611FD8E0032AF91 /* LaunchScreen.storyboard */; };
 		4E4DD01A2611FD8E0032AF91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DD0192611FD8E0032AF91 /* main.m */; };
+		4E4DD03C261214D30032AF91 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4DD03B261214D30032AF91 /* testView.m */; };
 		B665510809AA72745CCC54BB /* Pods_CoverageApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C56A0670E326D10C2BC8C08 /* Pods_CoverageApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		4E4DD0162611FD8E0032AF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E4DD0182611FD8E0032AF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E4DD0192611FD8E0032AF91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E4DD03A261214D30032AF91 /* testView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
+		4E4DD03B261214D30032AF91 /* testView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
 		F873BE1B290AFAF4F3B2F5C9 /* Pods-CoverageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoverageApp.debug.xcconfig"; path = "Target Support Files/Pods-CoverageApp/Pods-CoverageApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +82,8 @@
 				4E4DD0152611FD8E0032AF91 /* LaunchScreen.storyboard */,
 				4E4DD0182611FD8E0032AF91 /* Info.plist */,
 				4E4DD0192611FD8E0032AF91 /* main.m */,
+				4E4DD03A261214D30032AF91 /* testView.h */,
+				4E4DD03B261214D30032AF91 /* testView.m */,
 			);
 			path = CoverageApp;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				4E4DD00F2611FD8B0032AF91 /* ViewController.m in Sources */,
 				4E4DD0092611FD8B0032AF91 /* AppDelegate.m in Sources */,
 				4E4DD01A2611FD8E0032AF91 /* main.m in Sources */,
+				4E4DD03C261214D30032AF91 /* testView.m in Sources */,
 				4E4DD00C2611FD8B0032AF91 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

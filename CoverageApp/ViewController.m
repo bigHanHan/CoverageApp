@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "testView.h"
 
 extern void __gcov_flush(void);
 extern void llvm_delete_writeout_function_list(void);
@@ -31,6 +32,9 @@ extern void llvm_delete_flush_function_list(void);
     __gcov_flush();
   });
   dispatch_resume(self.timer);
+  
+  testView *view = [[testView alloc] initWithFrame:self.view.frame];
+  [self.view addSubview:view];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
