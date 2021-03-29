@@ -22,6 +22,8 @@ extern void llvm_delete_flush_function_list(void);
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  llvm_delete_writeout_function_list();
+  llvm_delete_flush_function_list();
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
   NSString *documentsDirectory = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"gcda_files"];
   setenv("GCOV_PREFIX", [documentsDirectory cStringUsingEncoding:NSUTF8StringEncoding], 1);
@@ -35,12 +37,15 @@ extern void llvm_delete_flush_function_list(void);
   
   testView *view = [[testView alloc] initWithFrame:self.view.frame];
   [self.view addSubview:view];
+  
+  UIButton *blueButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 200, 50, 50)];
+  blueButton.backgroundColor = UIColor.blueColor;
+  [self.view addSubview:blueButton];
+  [blueButton addTarget:self action:@selector(blueClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)viewDidDisappear:(BOOL)animated
+- (void)blueClick
 {
-  [super viewDidDisappear:animated];
-  
   dispatch_source_cancel(self.timer);
   llvm_delete_writeout_function_list();
   llvm_delete_flush_function_list();
