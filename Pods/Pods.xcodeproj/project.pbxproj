@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091B81D9EBEB8074E75C18CAAF4739A0 /* WindowsMMap.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DF963249F59079457B6B65E82376AF2 /* WindowsMMap.c */; };
+		1748239EDA1C253F2C005672F26C357A /* InstrProfilingInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 38AA7C961227F8A44C736F9202203A01 /* InstrProfilingInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1829568DD2F7CB3884BE336B1FA47F14 /* InstrProfilingUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 510E574307709EC149C8AB6FC4704596 /* InstrProfilingUtil.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A3C199FD5926D54FE7D8A0CB86B7A49 /* InstrProfilingPlatformLinux.c in Sources */ = {isa = PBXBuildFile; fileRef = E649DEA43607F645BDCDA9DB01794100 /* InstrProfilingPlatformLinux.c */; };
+		205C6E148E60F6B10B121FE3F95F8929 /* InstrProfilingPlatformFuchsia.c in Sources */ = {isa = PBXBuildFile; fileRef = A9974B5FB70404295869237B31D35398 /* InstrProfilingPlatformFuchsia.c */; };
+		21A47D43B5024CA1B6EC49BA8F82099A /* InstrProfilingNameVar.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A17DB34EF43D4113BDD6638301250D3 /* InstrProfilingNameVar.c */; };
+		268102D44804C8CACFD23706312FB7F7 /* InstrProfiling.c in Sources */ = {isa = PBXBuildFile; fileRef = F0451B91478BA840B30B77F3E040D7E8 /* InstrProfiling.c */; };
+		2A029C0141EC67C7F85A4184B0A30549 /* InstrProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = 507B2A9CD69BBA77E15E51938677AE39 /* InstrProfiling.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A4C7C189912E86CF21B462904BCED7D /* WindowsMMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 200174525CC23CF9C248D86D39F789E0 /* WindowsMMap.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F1FF1482270818A13418253C4CF7A67 /* InstrProfilingMergeFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 51AAD1E53F5CE5A8DC0C3D49D5D5C42E /* InstrProfilingMergeFile.c */; };
+		357ABD1F2053EC5F9C11ED2E78413EEF /* InstrProfilingPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9ED226777D968B470D6F91C56D0313 /* InstrProfilingPort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		36EB7DEEBE8FA82B4337082A49BC05FC /* Coverage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF1AF26C95C0B27924BD9655CDC3669 /* Coverage-dummy.m */; };
+		3C0BE2EFD7D6140CF6D899844C38DFC6 /* InstrProfilingMerge.c in Sources */ = {isa = PBXBuildFile; fileRef = 26B5D1719BC6746310FC49E4D9AFEA00 /* InstrProfilingMerge.c */; };
+		461BFAA93C11880DB38E06727827D526 /* InstrProfilingPlatformDarwin.c in Sources */ = {isa = PBXBuildFile; fileRef = 2183228391D5920A2957BF503D875205 /* InstrProfilingPlatformDarwin.c */; };
+		4C32C18940A81F6955488DA6F41BF72A /* InstrProfilingValue.c in Sources */ = {isa = PBXBuildFile; fileRef = 5C064F1ABE258481A1655D99632A5447 /* InstrProfilingValue.c */; };
+		687E0712281D7C95FE665334EE16500C /* InstrProfData.inc in Headers */ = {isa = PBXBuildFile; fileRef = 25B7DEDFF9914A10923F4448D89D27EB /* InstrProfData.inc */; settings = {ATTRIBUTES = (Project, ); }; };
+		720FCCAB258A8329C217E15367F18348 /* InstrProfilingFile.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AF2F86B772249D1E1A3F75F343AF749 /* InstrProfilingFile.c */; };
+		7919A09C91AC1C0291C20CF9419EDC7C /* GCDAProfiling.h in Headers */ = {isa = PBXBuildFile; fileRef = 37F937FD2A389DF47B48827133EFC8AC /* GCDAProfiling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6719C8FF36834CA09C6D470B10ED28 /* InstrProfilingUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 382D2DDCCA430A985DB2DFF9678CB50D /* InstrProfilingUtil.c */; };
+		92E3EDE454D4064AD6E002196C220756 /* GCDAProfiling.c in Sources */ = {isa = PBXBuildFile; fileRef = 46DE5149E428BF95D67946CDAC7A0B39 /* GCDAProfiling.c */; };
+		9F41CA41416E5964890580321AA20332 /* InstrProfilingBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3B2B41289702842DD6052841DD1E1474 /* InstrProfilingBuffer.c */; };
+		A789CF37AB4410EB40128F4C4F6EB8F4 /* Pods-CoverageApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFC7B19E85D4736AEE8DC26BDBFCD5A /* Pods-CoverageApp-dummy.m */; };
+		B560E7C449A69039D792AF76437C4B79 /* Pods-CoverageApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 775C2413656B6E7C1457D133953A1281 /* Pods-CoverageApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B851DAF85DCB3455577E8618DE164C28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C1F58943563A883A14F5AA380EF7CE55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C20170D9A5CFF2DC8ABEFAC53862968C /* InstrProfilingPlatformOther.c in Sources */ = {isa = PBXBuildFile; fileRef = 620271FF35EB80370A658925F96606F1 /* InstrProfilingPlatformOther.c */; };
+		DF6586F3F51B200BE99CBFF002F93FD6 /* InstrProfilingPlatformWindows.c in Sources */ = {isa = PBXBuildFile; fileRef = 9FEEA49C355485A7E2023929E4408829 /* InstrProfilingPlatformWindows.c */; };
+		E61B3F4E846E88736F5D913595981874 /* InstrProfilingWriter.c in Sources */ = {isa = PBXBuildFile; fileRef = 3BB8011E71111521CA114C190CE3EA2D /* InstrProfilingWriter.c */; };
+		EFB7DE7BF3BDA61DF1AC23D024FA4F47 /* Coverage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A33591DF6265CB079C993BD5EFDB8036 /* Coverage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC025C3D9491EB0793AF159527EF6CE6 /* InstrProfilingRuntime.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4A519B9FC76CACF44C8D5D8455DE1A6F /* InstrProfilingRuntime.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C52B5B8CD35A8C52672E1E9550C09E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70191623016E44C8BC3F146CA3E06628;
+			remoteInfo = Coverage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02D3CE0B325604748B2E1E296424DAA3 /* Coverage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Coverage.debug.xcconfig; sourceTree = "<group>"; };
+		07D1E5422D19A2CEC6FF615B3A3468CB /* Coverage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Coverage.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0A17DB34EF43D4113BDD6638301250D3 /* InstrProfilingNameVar.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingNameVar.c; path = Classes/InstrProfilingNameVar.c; sourceTree = "<group>"; };
+		0AF2F86B772249D1E1A3F75F343AF749 /* InstrProfilingFile.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingFile.c; path = Classes/InstrProfilingFile.c; sourceTree = "<group>"; };
+		1929423AEB3BB82A3BC1647395733D7E /* Pods_CoverageApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CoverageApp.framework; path = "Pods-CoverageApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		200174525CC23CF9C248D86D39F789E0 /* WindowsMMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WindowsMMap.h; path = Classes/WindowsMMap.h; sourceTree = "<group>"; };
+		2183228391D5920A2957BF503D875205 /* InstrProfilingPlatformDarwin.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingPlatformDarwin.c; path = Classes/InstrProfilingPlatformDarwin.c; sourceTree = "<group>"; };
+		25B7DEDFF9914A10923F4448D89D27EB /* InstrProfData.inc */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfData.inc; path = Classes/InstrProfData.inc; sourceTree = "<group>"; };
+		26B5D1719BC6746310FC49E4D9AFEA00 /* InstrProfilingMerge.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingMerge.c; path = Classes/InstrProfilingMerge.c; sourceTree = "<group>"; };
+		26D5EA33311D98ED0E90A607699CF77C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		34E19E3CEED98808B04DC8E2A447F035 /* Pods-CoverageApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoverageApp-frameworks.sh"; sourceTree = "<group>"; };
+		37F937FD2A389DF47B48827133EFC8AC /* GCDAProfiling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAProfiling.h; path = Classes/GCDAProfiling.h; sourceTree = "<group>"; };
+		382D2DDCCA430A985DB2DFF9678CB50D /* InstrProfilingUtil.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingUtil.c; path = Classes/InstrProfilingUtil.c; sourceTree = "<group>"; };
+		38AA7C961227F8A44C736F9202203A01 /* InstrProfilingInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InstrProfilingInternal.h; path = Classes/InstrProfilingInternal.h; sourceTree = "<group>"; };
+		3B2B41289702842DD6052841DD1E1474 /* InstrProfilingBuffer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingBuffer.c; path = Classes/InstrProfilingBuffer.c; sourceTree = "<group>"; };
+		3BB8011E71111521CA114C190CE3EA2D /* InstrProfilingWriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingWriter.c; path = Classes/InstrProfilingWriter.c; sourceTree = "<group>"; };
+		46DE5149E428BF95D67946CDAC7A0B39 /* GCDAProfiling.c */ = {isa = PBXFileReference; includeInIndex = 1; name = GCDAProfiling.c; path = Classes/GCDAProfiling.c; sourceTree = "<group>"; };
+		4A519B9FC76CACF44C8D5D8455DE1A6F /* InstrProfilingRuntime.cc */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingRuntime.cc; path = Classes/InstrProfilingRuntime.cc; sourceTree = "<group>"; };
+		4A9ED226777D968B470D6F91C56D0313 /* InstrProfilingPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InstrProfilingPort.h; path = Classes/InstrProfilingPort.h; sourceTree = "<group>"; };
+		507B2A9CD69BBA77E15E51938677AE39 /* InstrProfiling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InstrProfiling.h; path = Classes/InstrProfiling.h; sourceTree = "<group>"; };
+		510E574307709EC149C8AB6FC4704596 /* InstrProfilingUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InstrProfilingUtil.h; path = Classes/InstrProfilingUtil.h; sourceTree = "<group>"; };
+		51AAD1E53F5CE5A8DC0C3D49D5D5C42E /* InstrProfilingMergeFile.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingMergeFile.c; path = Classes/InstrProfilingMergeFile.c; sourceTree = "<group>"; };
+		5C064F1ABE258481A1655D99632A5447 /* InstrProfilingValue.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingValue.c; path = Classes/InstrProfilingValue.c; sourceTree = "<group>"; };
+		620271FF35EB80370A658925F96606F1 /* InstrProfilingPlatformOther.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingPlatformOther.c; path = Classes/InstrProfilingPlatformOther.c; sourceTree = "<group>"; };
+		63B3EEE0E57F4D979EA22F1D64406DB3 /* Coverage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Coverage.framework; path = Coverage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A24077B39D68E990EBC9DA708576099 /* Coverage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Coverage-Info.plist"; sourceTree = "<group>"; };
+		6BF1AF26C95C0B27924BD9655CDC3669 /* Coverage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Coverage-dummy.m"; sourceTree = "<group>"; };
+		6C87AEC4C86E087E70F78A0B292BEFB7 /* Pods-CoverageApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoverageApp.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		775C2413656B6E7C1457D133953A1281 /* Pods-CoverageApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoverageApp-umbrella.h"; sourceTree = "<group>"; };
+		7DF963249F59079457B6B65E82376AF2 /* WindowsMMap.c */ = {isa = PBXFileReference; includeInIndex = 1; name = WindowsMMap.c; path = Classes/WindowsMMap.c; sourceTree = "<group>"; };
+		9AC72893CECC09B565A14BD388300B97 /* Pods-CoverageApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoverageApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FEEA49C355485A7E2023929E4408829 /* InstrProfilingPlatformWindows.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingPlatformWindows.c; path = Classes/InstrProfilingPlatformWindows.c; sourceTree = "<group>"; };
+		A33591DF6265CB079C993BD5EFDB8036 /* Coverage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Coverage-umbrella.h"; sourceTree = "<group>"; };
+		A9974B5FB70404295869237B31D35398 /* InstrProfilingPlatformFuchsia.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingPlatformFuchsia.c; path = Classes/InstrProfilingPlatformFuchsia.c; sourceTree = "<group>"; };
+		AFFC7B19E85D4736AEE8DC26BDBFCD5A /* Pods-CoverageApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoverageApp-dummy.m"; sourceTree = "<group>"; };
+		B1B3EDA37E4AEB1FC6C79F89B32D37C3 /* Pods-CoverageApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoverageApp.modulemap"; sourceTree = "<group>"; };
+		B6F482FAB445A0C342B2043462EE35FF /* Coverage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Coverage.release.xcconfig; sourceTree = "<group>"; };
+		B88CD8643A596C95EB7CC5D3EC257A2C /* Pods-CoverageApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoverageApp-Info.plist"; sourceTree = "<group>"; };
+		BA115EF241F08DAE6F49E86082D05467 /* Coverage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Coverage.modulemap; sourceTree = "<group>"; };
+		BFE107EFB1EC1D78CB24920C5A9003BE /* Pods-CoverageApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoverageApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		CE8C7AF2C661FFEFFB6DABD0A33D23EF /* Pods-CoverageApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoverageApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E649DEA43607F645BDCDA9DB01794100 /* InstrProfilingPlatformLinux.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfilingPlatformLinux.c; path = Classes/InstrProfilingPlatformLinux.c; sourceTree = "<group>"; };
+		F0451B91478BA840B30B77F3E040D7E8 /* InstrProfiling.c */ = {isa = PBXFileReference; includeInIndex = 1; name = InstrProfiling.c; path = Classes/InstrProfiling.c; sourceTree = "<group>"; };
+		F49DCAD20EE2FAB57795913FFD69CA46 /* Coverage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Coverage-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ABFF7757DAACF45B9EFA72CB848D5BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B851DAF85DCB3455577E8618DE164C28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F94A516CDDDACFAB2115CC11825D7E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F58943563A883A14F5AA380EF7CE55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4944780A4DF54D3FF142B1E04772D11E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				548A49BB3D5C3E69A50C25102890C092 /* Coverage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		548A49BB3D5C3E69A50C25102890C092 /* Coverage */ = {
+			isa = PBXGroup;
+			children = (
+				46DE5149E428BF95D67946CDAC7A0B39 /* GCDAProfiling.c */,
+				37F937FD2A389DF47B48827133EFC8AC /* GCDAProfiling.h */,
+				25B7DEDFF9914A10923F4448D89D27EB /* InstrProfData.inc */,
+				F0451B91478BA840B30B77F3E040D7E8 /* InstrProfiling.c */,
+				507B2A9CD69BBA77E15E51938677AE39 /* InstrProfiling.h */,
+				3B2B41289702842DD6052841DD1E1474 /* InstrProfilingBuffer.c */,
+				0AF2F86B772249D1E1A3F75F343AF749 /* InstrProfilingFile.c */,
+				38AA7C961227F8A44C736F9202203A01 /* InstrProfilingInternal.h */,
+				26B5D1719BC6746310FC49E4D9AFEA00 /* InstrProfilingMerge.c */,
+				51AAD1E53F5CE5A8DC0C3D49D5D5C42E /* InstrProfilingMergeFile.c */,
+				0A17DB34EF43D4113BDD6638301250D3 /* InstrProfilingNameVar.c */,
+				2183228391D5920A2957BF503D875205 /* InstrProfilingPlatformDarwin.c */,
+				A9974B5FB70404295869237B31D35398 /* InstrProfilingPlatformFuchsia.c */,
+				E649DEA43607F645BDCDA9DB01794100 /* InstrProfilingPlatformLinux.c */,
+				620271FF35EB80370A658925F96606F1 /* InstrProfilingPlatformOther.c */,
+				9FEEA49C355485A7E2023929E4408829 /* InstrProfilingPlatformWindows.c */,
+				4A9ED226777D968B470D6F91C56D0313 /* InstrProfilingPort.h */,
+				4A519B9FC76CACF44C8D5D8455DE1A6F /* InstrProfilingRuntime.cc */,
+				382D2DDCCA430A985DB2DFF9678CB50D /* InstrProfilingUtil.c */,
+				510E574307709EC149C8AB6FC4704596 /* InstrProfilingUtil.h */,
+				5C064F1ABE258481A1655D99632A5447 /* InstrProfilingValue.c */,
+				3BB8011E71111521CA114C190CE3EA2D /* InstrProfilingWriter.c */,
+				7DF963249F59079457B6B65E82376AF2 /* WindowsMMap.c */,
+				200174525CC23CF9C248D86D39F789E0 /* WindowsMMap.h */,
+				AB8C62BEF609CB6620C7F93CCE0E29AE /* Pod */,
+				66F551D0AF6E07DBA9AFE68404E3EA5F /* Support Files */,
+			);
+			name = Coverage;
+			path = /Users/noxluna/Project/C/Coverage;
+			sourceTree = "<absolute>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66F551D0AF6E07DBA9AFE68404E3EA5F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA115EF241F08DAE6F49E86082D05467 /* Coverage.modulemap */,
+				6BF1AF26C95C0B27924BD9655CDC3669 /* Coverage-dummy.m */,
+				6A24077B39D68E990EBC9DA708576099 /* Coverage-Info.plist */,
+				F49DCAD20EE2FAB57795913FFD69CA46 /* Coverage-prefix.pch */,
+				A33591DF6265CB079C993BD5EFDB8036 /* Coverage-umbrella.h */,
+				02D3CE0B325604748B2E1E296424DAA3 /* Coverage.debug.xcconfig */,
+				B6F482FAB445A0C342B2043462EE35FF /* Coverage.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../CoverageApp/Pods/Target Support Files/Coverage";
+			sourceTree = "<group>";
+		};
+		6D1B2C97E97B0909CE91C36F875EB722 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				732F192C5481DD0BA86106AC6D9E5AAF /* Pods-CoverageApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		732F192C5481DD0BA86106AC6D9E5AAF /* Pods-CoverageApp */ = {
+			isa = PBXGroup;
+			children = (
+				B1B3EDA37E4AEB1FC6C79F89B32D37C3 /* Pods-CoverageApp.modulemap */,
+				9AC72893CECC09B565A14BD388300B97 /* Pods-CoverageApp-acknowledgements.markdown */,
+				BFE107EFB1EC1D78CB24920C5A9003BE /* Pods-CoverageApp-acknowledgements.plist */,
+				AFFC7B19E85D4736AEE8DC26BDBFCD5A /* Pods-CoverageApp-dummy.m */,
+				34E19E3CEED98808B04DC8E2A447F035 /* Pods-CoverageApp-frameworks.sh */,
+				B88CD8643A596C95EB7CC5D3EC257A2C /* Pods-CoverageApp-Info.plist */,
+				775C2413656B6E7C1457D133953A1281 /* Pods-CoverageApp-umbrella.h */,
+				CE8C7AF2C661FFEFFB6DABD0A33D23EF /* Pods-CoverageApp.debug.xcconfig */,
+				6C87AEC4C86E087E70F78A0B292BEFB7 /* Pods-CoverageApp.release.xcconfig */,
+			);
+			name = "Pods-CoverageApp";
+			path = "Target Support Files/Pods-CoverageApp";
+			sourceTree = "<group>";
+		};
+		A7623018EBB4CE2AF4C9A9FFC8599EDD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63B3EEE0E57F4D979EA22F1D64406DB3 /* Coverage.framework */,
+				1929423AEB3BB82A3BC1647395733D7E /* Pods_CoverageApp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB8C62BEF609CB6620C7F93CCE0E29AE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				07D1E5422D19A2CEC6FF615B3A3468CB /* Coverage.podspec */,
+				26D5EA33311D98ED0E90A607699CF77C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4944780A4DF54D3FF142B1E04772D11E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A7623018EBB4CE2AF4C9A9FFC8599EDD /* Products */,
+				6D1B2C97E97B0909CE91C36F875EB722 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		065DB6B5105379B082C529FB2B561D8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B560E7C449A69039D792AF76437C4B79 /* Pods-CoverageApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBCE6BA2ADE09BBB64C96CBE7580155D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB7DE7BF3BDA61DF1AC23D024FA4F47 /* Coverage-umbrella.h in Headers */,
+				7919A09C91AC1C0291C20CF9419EDC7C /* GCDAProfiling.h in Headers */,
+				687E0712281D7C95FE665334EE16500C /* InstrProfData.inc in Headers */,
+				2A029C0141EC67C7F85A4184B0A30549 /* InstrProfiling.h in Headers */,
+				1748239EDA1C253F2C005672F26C357A /* InstrProfilingInternal.h in Headers */,
+				357ABD1F2053EC5F9C11ED2E78413EEF /* InstrProfilingPort.h in Headers */,
+				1829568DD2F7CB3884BE336B1FA47F14 /* InstrProfilingUtil.h in Headers */,
+				2A4C7C189912E86CF21B462904BCED7D /* WindowsMMap.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		70191623016E44C8BC3F146CA3E06628 /* Coverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BC485DC92479DD00421AAFABE939436 /* Build configuration list for PBXNativeTarget "Coverage" */;
+			buildPhases = (
+				CBCE6BA2ADE09BBB64C96CBE7580155D /* Headers */,
+				644810B687575C741F64DF83E69DF67A /* Sources */,
+				0ABFF7757DAACF45B9EFA72CB848D5BD /* Frameworks */,
+				6072657E1797109985750DA99D37C8F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coverage;
+			productName = Coverage;
+			productReference = 63B3EEE0E57F4D979EA22F1D64406DB3 /* Coverage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB738B7F5E5CB2B166B7FF102191D020 /* Pods-CoverageApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25213733DD1B70FC1152FCB93E7E28A0 /* Build configuration list for PBXNativeTarget "Pods-CoverageApp" */;
+			buildPhases = (
+				065DB6B5105379B082C529FB2B561D8F /* Headers */,
+				F8E3FF5BAC1F4DD643CC8A5139EDA9F8 /* Sources */,
+				3F94A516CDDDACFAB2115CC11825D7E7 /* Frameworks */,
+				A9C415AB028FCE5D16788568DB90C699 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5ADA991124B5D66E2D142AAADA1B9527 /* PBXTargetDependency */,
+			);
+			name = "Pods-CoverageApp";
+			productName = "Pods-CoverageApp";
+			productReference = 1929423AEB3BB82A3BC1647395733D7E /* Pods_CoverageApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A7623018EBB4CE2AF4C9A9FFC8599EDD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70191623016E44C8BC3F146CA3E06628 /* Coverage */,
+				CB738B7F5E5CB2B166B7FF102191D020 /* Pods-CoverageApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6072657E1797109985750DA99D37C8F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C415AB028FCE5D16788568DB90C699 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		644810B687575C741F64DF83E69DF67A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36EB7DEEBE8FA82B4337082A49BC05FC /* Coverage-dummy.m in Sources */,
+				92E3EDE454D4064AD6E002196C220756 /* GCDAProfiling.c in Sources */,
+				268102D44804C8CACFD23706312FB7F7 /* InstrProfiling.c in Sources */,
+				9F41CA41416E5964890580321AA20332 /* InstrProfilingBuffer.c in Sources */,
+				720FCCAB258A8329C217E15367F18348 /* InstrProfilingFile.c in Sources */,
+				3C0BE2EFD7D6140CF6D899844C38DFC6 /* InstrProfilingMerge.c in Sources */,
+				2F1FF1482270818A13418253C4CF7A67 /* InstrProfilingMergeFile.c in Sources */,
+				21A47D43B5024CA1B6EC49BA8F82099A /* InstrProfilingNameVar.c in Sources */,
+				461BFAA93C11880DB38E06727827D526 /* InstrProfilingPlatformDarwin.c in Sources */,
+				205C6E148E60F6B10B121FE3F95F8929 /* InstrProfilingPlatformFuchsia.c in Sources */,
+				1A3C199FD5926D54FE7D8A0CB86B7A49 /* InstrProfilingPlatformLinux.c in Sources */,
+				C20170D9A5CFF2DC8ABEFAC53862968C /* InstrProfilingPlatformOther.c in Sources */,
+				DF6586F3F51B200BE99CBFF002F93FD6 /* InstrProfilingPlatformWindows.c in Sources */,
+				FC025C3D9491EB0793AF159527EF6CE6 /* InstrProfilingRuntime.cc in Sources */,
+				8F6719C8FF36834CA09C6D470B10ED28 /* InstrProfilingUtil.c in Sources */,
+				4C32C18940A81F6955488DA6F41BF72A /* InstrProfilingValue.c in Sources */,
+				E61B3F4E846E88736F5D913595981874 /* InstrProfilingWriter.c in Sources */,
+				091B81D9EBEB8074E75C18CAAF4739A0 /* WindowsMMap.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8E3FF5BAC1F4DD643CC8A5139EDA9F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A789CF37AB4410EB40128F4C4F6EB8F4 /* Pods-CoverageApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5ADA991124B5D66E2D142AAADA1B9527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Coverage;
+			target = 70191623016E44C8BC3F146CA3E06628 /* Coverage */;
+			targetProxy = 7C52B5B8CD35A8C52672E1E9550C09E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		71243899B61152433AAE34EE86456EE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		75D70EEEA0A456E14F7338A7F342964E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8289D25D878DBE13A8C94DAE5DA25A5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE8C7AF2C661FFEFFB6DABD0A33D23EF /* Pods-CoverageApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoverageApp/Pods-CoverageApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoverageApp/Pods-CoverageApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0CD3F7772AB8A4C01A6A0CF21AFDEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C87AEC4C86E087E70F78A0B292BEFB7 /* Pods-CoverageApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CoverageApp/Pods-CoverageApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CoverageApp/Pods-CoverageApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E79459FF69C717AF4556FCBCBCD5DCC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6F482FAB445A0C342B2043462EE35FF /* Coverage.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Coverage/Coverage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Coverage/Coverage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Coverage/Coverage.modulemap";
+				PRODUCT_MODULE_NAME = Coverage;
+				PRODUCT_NAME = Coverage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9E877F8918DD3DD0B3896D8DDE82843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D3CE0B325604748B2E1E296424DAA3 /* Coverage.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Coverage/Coverage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Coverage/Coverage-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Coverage/Coverage.modulemap";
+				PRODUCT_MODULE_NAME = Coverage;
+				PRODUCT_NAME = Coverage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BC485DC92479DD00421AAFABE939436 /* Build configuration list for PBXNativeTarget "Coverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E877F8918DD3DD0B3896D8DDE82843 /* Debug */,
+				E79459FF69C717AF4556FCBCBCD5DCC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25213733DD1B70FC1152FCB93E7E28A0 /* Build configuration list for PBXNativeTarget "Pods-CoverageApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8289D25D878DBE13A8C94DAE5DA25A5C /* Debug */,
+				B0CD3F7772AB8A4C01A6A0CF21AFDEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D70EEEA0A456E14F7338A7F342964E /* Debug */,
+				71243899B61152433AAE34EE86456EE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

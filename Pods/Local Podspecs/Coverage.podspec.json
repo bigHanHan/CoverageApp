@@ -1,0 +1,21 @@
+{
+  "name": "Coverage",
+  "version": "1.0.0",
+  "summary": "objective-c increment code coverage based on git.",
+  "description": "objective-c increment code coverage based on git.",
+  "homepage": "git@github.com:xuezhulian/Coverage.git",
+  "license": "GPL",
+  "authors": {
+    "xuezhulian": "xuezhulian@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "git@github.com:xuezhulian/Coverage.git",
+    "tag": "1.0.0"
+  },
+  "source_files": "Classes",
+  "exclude_files": "Classes/Exclude",
+  "public_header_files": "Classes/GCDAProfiling.h"
+}

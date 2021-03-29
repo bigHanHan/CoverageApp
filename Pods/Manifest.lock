@@ -1,0 +1,16 @@
+PODS:
+  - Coverage (1.0.0)
+
+DEPENDENCIES:
+  - Coverage (from `/Users/noxluna/Project/C/Coverage`)
+
+EXTERNAL SOURCES:
+  Coverage:
+    :path: "/Users/noxluna/Project/C/Coverage"
+
+SPEC CHECKSUMS:
+  Coverage: e3e6bdef51b6a1bb432e8eb328fb6ada6a8c4778
+
+PODFILE CHECKSUM: 9b7bbff3703737c095f5b36cb1ec423b23a8abaf
+
+COCOAPODS: 1.10.0
