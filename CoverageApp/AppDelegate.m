@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <Coverage/GCDAProfiling.h>
+//#import <Coverage/GCDAProfiling.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  CODE_CCOVER_START
   return YES;
 }
 
