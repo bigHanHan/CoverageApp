@@ -22,8 +22,6 @@ extern void llvm_delete_flush_function_list(void);
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  llvm_delete_writeout_function_list();
-  llvm_delete_flush_function_list();
   NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
   NSString *documentsDirectory = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"gcda_files"];
   setenv("GCOV_PREFIX", [documentsDirectory cStringUsingEncoding:NSUTF8StringEncoding], 1);
